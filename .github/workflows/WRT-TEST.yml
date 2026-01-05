@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
     inputs:
       CONFIG:
-        default: 'MT7986'
+        default: 'JDCloud-Baili'
         required: true
         type: choice
         options:
-          - MT7986
+          - JDCloud-Baili
       SOURCE:
         default: 'padavanonly/immortalwrt-mt798x-6.6'
         required: true
