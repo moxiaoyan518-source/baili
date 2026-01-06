@@ -3,6 +3,9 @@ name: 京东云百里固件编译
 
 #CI计划
 on:  
+  #自动编译：每天早上6点
+  schedule:
+    - cron: 0 20 * * *
   workflow_dispatch:
     inputs:
       PACKAGE:
