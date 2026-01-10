@@ -76,8 +76,7 @@ if [ -f "$RUST_FILE" ]; then
 fi
 
 #修复DiskMan编译失败
-DM_FILE="./luci-app-diskman/applications/luci-app-diskman/Makefile"
-if [ -f "$DM_FILE" ]; then
+if [ -d *"luci-app-diskman"* ]; then
 	echo " "
 
 	sed -i 's/fs-ntfs/fs-ntfs3/g' $DM_FILE
