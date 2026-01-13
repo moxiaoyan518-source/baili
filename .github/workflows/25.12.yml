@@ -45,7 +45,7 @@ jobs:
       matrix:
         CONFIG: [JDCloud-Baili]
         REPO_INFO:
-          - {SOURCE: "oyk470p/immortalwrt-mt798x-rebase", BRANCH: "25.12-dev-ext_device_support"}
+          - {SOURCE: "oyk470p/immortalwrt-mt798x-rebase", BRANCH: "25.12-dev"}
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
